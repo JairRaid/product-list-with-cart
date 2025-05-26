@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch("data/data.json");
+        const response = await fetch("data/data.json"); // lien error when deployed to github /data/data.json
         if (!response.ok) throw new Error("erreur du chargement du fichier");
         const jsonData = await response.json();
         setProducts(jsonData);
