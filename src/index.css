@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "RedHatText";
+  src: url("/assets/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --custom-red: #c73b0f;
+  --rose-900: #260f08;
+  --rose-500: #87635a;
+  --rose-400: #ad8a85;
+  --rose-300: #caafa7;
+  --rose-100: #f5eeec;
+  --rose-50: #fcf8f6;
+  --custom-green: #1ea575;
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .text-rose-900 {
+    color: var(--rose-900);
+  }
+
+  .border-rose-400 {
+    border-color: var(--rose-400);
+  }
+
+  .hover\:border-rose-900:hover {
+    border-color: var(--rose-900);
+  }
+
+  .bg-rose-50 {
+    background-color: var(--rose-50);
+  }
+
+  .bg-custom-red {
+    background-color: var(--custom-red);
+  }
+
+  .hover\:text-custom-red:hover {
+    color: var(--custom-red);
+  }
+
+  .hover\:border-custom-red:hover {
+    border-color: var(--custom-red);
+  }
+
+  .after\:border-custom-red::after {
+    border-color: var(--custom-red);
+  }
+}
+
+.bg-rose-50 {
+  background-color: var(--rose-50);
+}
+
+.bg-rose-100 {
+  background-color: var(--rose-100);
+}
+
+.item--active {
+  box-shadow: inset 0 0 0 2px var(--custom-red);
+}
+
+.inset-rose-400 {
+  box-shadow: inset 0 0 0 1px var(--rose-400);
+}
+
+.text-rose-500 {
+  color: var(--rose-500);
+}
+
+.text-custom-red {
+  color: var(--custom-red);
+}
