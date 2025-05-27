@@ -37,7 +37,7 @@ function Modal({ isOrderConfirmed, onConfirmOrder }) {
       className="backdrop:bg-[#00000080]"
       onClick={(event) => handleClickedTarget(event)}
     >
-      <div className="flex flex-col fixed left-0 bottom-0 w-full h-[calc(100%-95px)] outline-none bg-white rounded-t-[12px] p-[40px_24px_24px_24px] md:p-[40px] md:rounded-[12px] md:left-1/2 md:translate-x-[-50%] md:bottom-auto md:w-[calc(100%-80px)] md:top-1/2 md:translate-y-[-50%] md:max-w-[700px]">
+      <div className="flex flex-col fixed left-0 bottom-0 w-full outline-none bg-white rounded-t-[12px] p-[40px_24px_24px_24px] md:p-[40px] md:rounded-[12px] md:left-1/2 md:translate-x-[-50%] md:bottom-auto md:w-[calc(100%-80px)] md:top-1/2 md:translate-y-[-50%] md:max-w-[700px]">
         <header>
           <img
             aria-hidden="true"
@@ -58,7 +58,7 @@ function Modal({ isOrderConfirmed, onConfirmOrder }) {
           aria-label="Order Summary"
           className="bg-rose-50 rounded-[8px] p-[24px] mb-[32px]"
         >
-          <ul className="max-h-[354px] overflow-auto">
+          <ul className="max-h-[250px] overflow-auto">
             {items.map((item, index) => {
               const { thumbnail } = item.image;
               const { name, price, quantity } = item;
