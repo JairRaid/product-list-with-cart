@@ -12,7 +12,7 @@ function Cart({ onConfirmOrder }) {
   }
 
   return (
-    <section className="lg:basis-[35%] p-[24px] bg-white rounded-[12px]">
+    <section className="lg:mt-[-80px] lg:basis-[35%] p-[24px] bg-white rounded-[12px]">
       <h2 className="text-[1.5rem] text-custom-red font-bold mb-[24px]">
         Your Cart ({items.length})
       </h2>
