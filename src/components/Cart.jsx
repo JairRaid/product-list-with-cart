@@ -14,7 +14,7 @@ function Cart({ onConfirmOrder }) {
   return (
     <section className="lg:basis-[35%] p-[24px] bg-white rounded-[12px]">
       <h2 className="text-[1.5rem] text-custom-red font-bold mb-[24px]">
-        Your Cart (0)
+        Your Cart ({items.length})
       </h2>
       {!items.length && (
         <section className="p-[16px]">
